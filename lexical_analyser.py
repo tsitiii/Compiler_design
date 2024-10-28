@@ -1,35 +1,6 @@
-# import re
+#Made By Tsiyon Gashaw Mihretu
+# ID: ETS1588/14
 
-# TOKEN_TYPES = [
-#     ('KEYWORD', r'\bint\b'),      # Keywords
-#     ('IDENTIFIER', r'[a-zA-Z_][a-zA-Z0-9_]*'),  # Identifiers
-#     ('NUMBER', r'\b\d+\b'),       # Numbers
-#     ('OPERATOR', r'[=]'),         # Operators
-#     ('SEPARATOR', r'[;]'),        # Separators
-#     ('WHITESPACE', r'\s+'),       # Whitespace (to ignore)
-# ]
-
-# # Combine token types into a single regex
-# token_regex = '|'.join(f'(?P<{name}>{pattern})' for name, pattern in TOKEN_TYPES)
-
-# def lex(input_string):
-#     tokens = []
-#     for match in re.finditer(token_regex, input_string):
-#         token_type = match.lastgroup
-#         token_value = match.group(token_type)
-#         if token_type != 'WHITESPACE':  # Ignore whitespace
-#             tokens.append((token_type, token_value))
-#     return tokens
-
-# input_line = "int age = 23;"
-# tokens = lex(input_line)
-
-
-# for token in tokens:
-#     print(token)
-
-
-# Define token types
 TOKEN_TYPES = {
     'KEYWORD': ['int'],
     'IDENTIFIER': [],
